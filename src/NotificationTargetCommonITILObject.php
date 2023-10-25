@@ -260,8 +260,9 @@ abstract class NotificationTargetCommonITILObject extends NotificationTarget
             'SELECT' => 'groups_id',
             'FROM'   => $grouplinktable,
             'WHERE'  => [
-                $fkfield => $this->obj->fields['id'],
-                'type'   => $type
+                $fkfield           => $this->obj->fields['id'],
+                'use_notification' => 1,
+                'type'             => $type
             ]
         ]);
 
@@ -294,8 +295,9 @@ abstract class NotificationTargetCommonITILObject extends NotificationTarget
             'SELECT' => 'groups_id',
             'FROM'   => $grouplinktable,
             'WHERE'  => [
-                $fkfield => $this->obj->fields['id'],
-                'type'   => $type
+                $fkfield           => $this->obj->fields['id'],
+                'use_notification' => 1,
+                'type'             => $type
             ]
         ]);
 
@@ -325,8 +327,9 @@ abstract class NotificationTargetCommonITILObject extends NotificationTarget
             'SELECT' => 'groups_id',
             'FROM'   => $grouplinktable,
             'WHERE'  => [
-                $fkfield => $this->obj->fields['id'],
-                'type'   => $type
+                $fkfield           => $this->obj->fields['id'],
+                'use_notification' => 1,
+                'type'             => $type
             ]
         ]);
 
